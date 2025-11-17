@@ -13,7 +13,7 @@ Este momento de retroalimentación implementa un modelo de deep learning para cl
   - train y validation
   - evaluación en test
   - las predicciones finales
-
+  - el análisis de resultados y la documentación de las decisiones tomadas para el modelo
 
 
 ## Dataset
@@ -58,20 +58,20 @@ Para el modelo, utilicé:
 ## Resultados (aprox)
 
 ### Baseline
-- validation accuracy: 0.53  
-- test accuracy: 0.38  
+- Validation accuracy: ~0.46  
+- Test accuracy: ~0.38  
 
 ### Mejorado
-- validation accuracy: 0.65  
-- test accuracy: ~0.55  
+- Validation accuracy: ~0.59  
+- Test accuracy: ~0.52  
 
-El modelo mejorado reduce el error aprox. un 27% a comparación del baseline.
+El modelo mejorado reduce el error en aprox. 24% respecto al baseline, mostrando mejor generalización.
 
 ## Conclusión
 
-- las secuencias de los esqueletos tienen suficiente info. para reconocer las acciones
-- un LSTM simple ya supera bastante en resultados al azar
-- aumentar la capacidad del modelo + regularización, mejora evidentemente la generalización
+- Las secuencias de esqueletos contienen suficiente información temporal para reconocer acciones  
+- Un LSTM simple ya supera claramente el desempeño al azar (12.5% en 8 clases)
+- Aumentar la capacidad del modelo + añadir regularización mejora de forma evidente la generalización y el desempeño final
 
 ## Autora
-- Fernanda Díaz Gutiérrez A01639572
+- Fernanda Díaz Gutiérrez — A01639572
